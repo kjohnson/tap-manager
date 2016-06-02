@@ -8,6 +8,12 @@ final class TapManager_Admin_Menu extends TapManager_Classes_Menu
 
     public $position = '26';
 
+    public function __construct()
+    {
+        $this->icon_url = TapManager::$url . 'assets/img/tap_icon.png';
+        parent::__construct();
+    }
+
     public function display()
     {
         ?><div class="wrap"><?
